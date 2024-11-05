@@ -58,8 +58,17 @@
 
             <div class="d-flex justify-content-between project-container">
 
+                <div v-for="project in this.store.projects" :key="project.id" class="card mx-2 w-25">
 
-                <ProjectCard />
+                    <ProjectCard 
+                    
+                        :id="project.id"
+                        :name="project.name"
+                        :technologies="project.technologies"
+                        :type="project.type"/>
+                        
+                </div>
+                
 
                 
                 
