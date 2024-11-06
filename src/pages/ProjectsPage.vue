@@ -55,7 +55,7 @@
     <main>
 
 
-        <router-view></router-view>
+        
         <div class="container">
 
             <div class="d-flex justify-content-between project-container">
@@ -67,12 +67,15 @@
                         :id="project.id"
                         :name="project.name"
                         :cover="project.full_cover_url"
+                        :slug="project.slug"
                         :technologies="project.technologies"
                         :type="project.type"/>
                         
-                </div>
+                </div>    
+                
                 
 
+                
                 
                 
             </div>

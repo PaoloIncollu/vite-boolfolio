@@ -17,6 +17,7 @@
 					routeName: 'projects-index',
 					label: 'Projects'
 				}
+              
 			]
         }
     }

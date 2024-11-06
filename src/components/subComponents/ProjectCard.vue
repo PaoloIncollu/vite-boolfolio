@@ -18,6 +18,7 @@
             id: Number,
             name: String,
             cover: String,
+            slug: String,
             technologies: Array,
             type: Object
             
@@ -37,7 +38,9 @@
                     
     <div class="card-body">
 
-        
+        <div>
+            {{ slug }}
+        </div>
 
         <div>
                             
@@ -71,9 +74,15 @@
             </span>
                             
                                 
-                            
-
         </div>
+
+
+        <div>
+
+            <router-link :to="{ name: 'project-show', params: { slug: slug } }">More Info</router-link>
+        </div>
+
+        
     </div>
 
     
