@@ -10,6 +10,10 @@
 					label: 'Home'
 				},
 				{
+					routeName: 'about',
+					label: 'Chi siamo'
+				},
+				{
 					routeName: 'projects-index',
 					label: 'Projects'
 				}

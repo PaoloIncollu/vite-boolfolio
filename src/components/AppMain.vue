@@ -20,16 +20,6 @@ export default{
     background-color: lightcoral;
     padding: 50px 0;
 
-        .project-container{
-
-            height: fit-content;
-
-            .card{
-
-                height: fit-content;
-            }
-
-        }
 
     }
 
