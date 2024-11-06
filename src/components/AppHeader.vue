@@ -2,7 +2,18 @@
     export default {
     data() {
         return { 
-        message: 'Laravel Boolfolio - API'
+        message: 'Laravel Boolfolio - API',
+
+        menuItems: [
+				{
+					routeName: 'home',
+					label: 'Home'
+				},
+				{
+					routeName: 'projects-index',
+					label: 'Projects'
+				}
+			]
         }
     }
     }
@@ -13,6 +24,16 @@
         <h1>
         {{ message }}
         </h1>
+
+        <ul class="d-flex justify-content-center">
+				<li v-for="(item, index) in menuItems" :key="index" class="list-group-item mx-2 ">
+					<router-link :to="{ name: item.routeName }" class="nav-link btn btn-warning p-2">
+						{{ item.label }}
+					</router-link>
+				</li>
+
+				 
+			</ul>
     </header>
 </template>
 
@@ -22,6 +43,8 @@
     
     text-align: center;
     padding: 20px 0;
+
+    
     }
 
 
