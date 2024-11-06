@@ -17,19 +17,27 @@
             
             id: Number,
             name: String,
+            cover: String,
             technologies: Array,
             type: Object
             
         }
     }
 
+    
+
 </script>
 
 <template>
 
+    <div v-if="cover != null">
+        <img :src= "cover" alt=""   class="card-img">
+    </div>
 
                     
     <div class="card-body">
+
+        
 
         <div>
                             
@@ -73,7 +81,10 @@
 
 <style lang="scss" scoped>
 
+    .card-img{
 
+        height: 200px;
+    }
 
     .card-body{
         

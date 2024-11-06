@@ -64,6 +64,7 @@
                     
                         :id="project.id"
                         :name="project.name"
+                        :cover="project.full_cover_url"
                         :technologies="project.technologies"
                         :type="project.type"/>
                         
@@ -98,7 +99,12 @@
 
         .project-container{
 
-            height: 200px;
+            height: fit-content;
+
+            .card{
+
+                height: fit-content;
+            }
 
         }
 
