@@ -38,9 +38,7 @@
                     
     <div class="card-body">
 
-        <div>
-            {{ slug }}
-        </div>
+        
 
         <div>
                             
