@@ -39,7 +39,9 @@ export default {
 		</h1>
 
 		<div>
-			<h5 v-if="project.type != null">
+
+			<h5 class="text-secondary d-inline-block me-2">Tipo:</h5>
+			<h5 v-if="project.type != null" class="d-inline-block">
 				{{ project.type.name }}
 			</h5>
 			<h5 v-else>
@@ -47,14 +49,22 @@ export default {
 			</h5>
 
 			<div>
-				<div v-for="technology in project.technologies" :key="technology.id">
+
+				<h5 class="text-secondary d-inline-block">Tecnologie: </h5>
+				<span v-for="technology in project.technologies" :key="technology.id" class="badge rounded-pill text-bg-primary m-1">
 					{{ technology.name }}
-				</div>
+				</span>
 			</div>
 
-			<p>
-				{{ project.content }}
-			</p>
+			<div>
+
+				<h5 class="text-secondary d-inline-block me-2">Contenuto: </h5>
+				<p class="d-inline-block">
+					{{ project.content }}
+				</p>
+			</div>
+
+			
 			
 			<div>
 				<img :src="project.full_cover_url" :alt="project.name">
